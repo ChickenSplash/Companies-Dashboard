@@ -22,7 +22,7 @@ class EmployeeFactory extends Factory
             'last_name' => $this->faker->lastName,
             'company_id' => Company::factory(), // auto-make a company
             'email' => $this->faker->unique()->safeEmail,
-            'phone' => $this->faker->phoneNumber,
+            'phone' => '07' . $this->faker->numerify('#########'),
         ];
     }
 }
